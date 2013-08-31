@@ -1,0 +1,51 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package webControl;
+
+import javax.inject.Named;
+import javax.enterprise.context.RequestScoped;
+
+/**
+ *
+ * @author hol
+ */
+@Named(value = "controlAcceso")
+@RequestScoped
+public class controlAcceso {
+
+    String login = "";
+    String password = "";
+
+    public String chequeoDatos() {
+        if (this.login.equalsIgnoreCase("hugo") && this.password.equalsIgnoreCase("123")) {
+            return "bienvenido, te has logueado como " + login;
+        } else {
+            return "";
+        }
+
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    /**
+     * Creates a new instance of controlAcceso
+     */
+    public controlAcceso() {
+    }
+}

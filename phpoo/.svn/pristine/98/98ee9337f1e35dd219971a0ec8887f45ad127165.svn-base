@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Inicio POO--</title>
+	</head>
+	<body>
+		<center>
+			<h3>Seleccione una opción</h3>
+			<form method="post" action="controller/controller.php">
+				<button name="buscar">
+					Buscar
+				</button>
+				<button name="editar">
+					Editar
+				</button>
+				<button name="borrar">
+					Borrar
+				</button>
+			</form>
+		</center>
+	</body>
+</html>

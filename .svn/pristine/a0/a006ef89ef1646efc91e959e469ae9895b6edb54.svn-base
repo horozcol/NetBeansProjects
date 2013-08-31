@@ -1,0 +1,20 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package webControl;
+
+/**
+ *
+ * @author hol
+ */
+public class DummyConn {
+
+    public String conexionFicticia(String nombre, String password) {
+        if (nombre.equalsIgnoreCase("hugo") && password.equalsIgnoreCase("123")) {
+            return "OK, te has logueado como " + nombre + " este es un mensaje desde DummyConn.java";
+        } else {
+            return "FALSE";
+        }
+    }
+}
